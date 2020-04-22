@@ -1,13 +1,19 @@
 <template>
-  $END$
+<Header></Header>
 </template>
 
 <script>
-  export default {
-    name: "Home"
-  }
+import Header from '../partials/Header.vue';
+
+export default {
+  name: 'Home',
+  components: {
+    Header,
+  },
+  data() {
+    return {
+      dataImg: '/images/home-image.jpg',
+    };
+  },
+};
 </script>
-
-<style scoped>
-
-</style>
