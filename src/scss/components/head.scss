@@ -1,0 +1,46 @@
+.head {
+
+  &__wrapper {
+    padding: 100px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__container {
+    max-width: 55%;
+    margin-bottom: 60px;
+  }
+
+  &__sub-text {
+    font: 300 1.4rem var(--font-sans-serif);
+  }
+
+  &__text {
+    font-size: 64px;
+    font-weight: 400;
+  }
+
+  &__container-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .small {
+      width: 40%;
+    }
+
+    .large {
+      width: 57%;
+    }
+  }
+
+  &__holder {
+    position: absolute;
+    top: 0;
+    right: -8%;
+    z-index: -1;
+    max-width: 55%;
+  }
+}

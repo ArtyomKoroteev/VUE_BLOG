@@ -1,0 +1,13 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0 7%;
+  background: var(--color-base-light);
+  &__wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+}

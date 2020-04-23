@@ -1,5 +1,5 @@
 import Vue from 'vue';
-
+import 'normalize.css';
 import './scss/styles.scss';
 
 import VueLazyload from 'vue-lazyload';
