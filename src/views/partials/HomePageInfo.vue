@@ -3,8 +3,8 @@
     <div class="head__wrapper">
       <div class="head__container">
         <strong class="head__sub-text">JOURNAL</strong>
-        <h1 class="head__text">Stay tuned to our articles and meet our new projects</h1>
-        <a href="" class="btn__action">Get started</a>
+        <h1 class="head__text">Read articles first</h1>
+        <a href="/posts" class="btn__action">Lear more</a>
       </div>
       <div class="head__container-image">
         <div class="small">

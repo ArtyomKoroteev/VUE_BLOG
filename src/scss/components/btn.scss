@@ -28,6 +28,7 @@
   }
 
   &__action {
+    @include animate(opacity);
     display: inline-flex;
     align-items: center;
     padding: 11px 36px;
@@ -38,5 +39,22 @@
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+
+    &:after {
+      @include animate(transform);
+      content: '';
+      background: url('/images/left-arrow.svg');
+      background-size: cover;
+      width: 18px;
+      height: 18px;
+      transform: scale(-1) translateX(-5px);
+    }
+
+    &:hover {
+      opacity: .8;
+      &:after {
+        transform: scale(-1) translateX(-10px);
+      }
+    }
   }
 }

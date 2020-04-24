@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo">
-        <a href="#">
+        <a href="/">
           <img src="images/CoolBlog.svg" alt="cool blog">
         </a>
       </div>

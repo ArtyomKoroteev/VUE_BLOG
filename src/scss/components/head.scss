@@ -9,7 +9,7 @@
   }
 
   &__container {
-    max-width: 55%;
+    max-width: 80%;
     margin-bottom: 60px;
   }
 
@@ -20,6 +20,11 @@
   &__text {
     font-size: 64px;
     font-weight: 400;
+
+    &-fullwidth {
+      max-width: 100%;
+      font-size: 72px;
+    }
   }
 
   &__container-image {
@@ -27,12 +32,34 @@
     align-items: flex-end;
     justify-content: space-between;
 
+    &--fullwidth {
+      margin-bottom: 50px;
+    }
+
+    .small,
+    .large,
+    .fullwidth {
+      overflow: hidden;
+      object-fit: cover;
+
+      img {
+        animation: scaleImg 30s ease 5ms alternate infinite;
+      }
+    }
+
     .small {
       width: 40%;
+      height: 19.6vw;
+
+      img {
+        animation: scaleImg 25s ease 5ms alternate infinite;
+      }
+
     }
 
     .large {
       width: 57%;
+      height: 25.7vw;
     }
   }
 
@@ -42,5 +69,14 @@
     right: -8%;
     z-index: -1;
     max-width: 55%;
+  }
+}
+
+@keyframes scaleImg {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
