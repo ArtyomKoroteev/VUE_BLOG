@@ -1,0 +1,16 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0 7%;
+  background: var(--color-base-light);
+  //box-shadow: 2px 8px 24px rgba(25,45,85,.08);
+
+  &__wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+}
