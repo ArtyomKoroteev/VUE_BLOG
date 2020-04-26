@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Auth from '../auth/Auth.vue';
+import Auth from '@/views/auth/Auth.vue';
 
 export default {
   name: 'Header',

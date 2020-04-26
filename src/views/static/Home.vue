@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from '../partials/Header.vue';
-import HomePageInfo from '../partials/HomePageInfo.vue';
+import Header from '@/views/partials/Header.vue';
+import HomePageInfo from '@/views/partials/HomePageInfo.vue';
 
 export default {
   name: 'Home',
