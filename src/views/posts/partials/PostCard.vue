@@ -6,9 +6,9 @@
           <img src="images/placeholder.gif" alt="image">
         </div>
         <div class="post-card__content">
-          <h2 class="post-card__title">Test</h2>
+          <h2 class="post-card__title">{{postsHolder.title}}</h2>
           <div class="post-card__description">
-            <p>test test test</p>
+            <p>{{postsHolder.body}}</p>
           </div>
         </div>
       </div>
@@ -20,15 +20,15 @@
 export default {
   name: 'PostCard',
   props: {
-    posts: Array,
+    post: Object,
   },
   data() {
     return {
-      postsHolder: Array,
+      postsHolder: Object,
     };
   },
   mounted() {
-    this.postsHolder = this.posts;
+    this.postsHolder = this.post;
   },
 };
 </script>

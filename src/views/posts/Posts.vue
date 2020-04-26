@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="post-container">
-          <PostCard v-for="item in items" :posts="item" :key="item"></PostCard>
+          <PostCard v-for="post in allPosts" :post="post" :key="post.id"></PostCard>
         </div>
       </div>
     </div>
@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import Header from '../partials/Header.vue';
-import PostCard from './partials/PostCard.vue';
+import Header from '@/views/partials/Header.vue';
+import PostCard from '@/views/posts/partials/PostCard.vue';
 
 export default {
   name: 'Posts',
@@ -33,10 +33,13 @@ export default {
     Header,
     PostCard,
   },
-  data() {
-    return {
-      items: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    };
+  computed: {
+    allPosts() {
+      return this.$store.getters['posts/getAllPosts'];
+    },
+  },
+  mounted() {
+    this.$store.dispatch('posts/fetchPosts');
   },
 };
 </script>
