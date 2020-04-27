@@ -1,0 +1,10 @@
+.filter {
+  &__container {
+    display: flex;
+    margin: 0 0 30px;
+  }
+
+  &__wrapper {
+    min-width: 250px;
+  }
+}

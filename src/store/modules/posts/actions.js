@@ -8,7 +8,7 @@ export default {
     })
       .then((response) => response.json())
       .then((posts) => {
-        context.commit('setPosts', posts.data);
+        context.commit('setPosts', posts);
       })
       .catch((errors) => {
         throw new Error(errors);

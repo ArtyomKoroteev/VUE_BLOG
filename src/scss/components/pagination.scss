@@ -1,0 +1,42 @@
+.pagination {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 30px;
+  }
+
+  &__list {
+    @extend %listreset;
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-accent);
+    margin-right: 5px;
+
+    &-current {
+      background: var(--base-link-color);
+      color: var(--color-base-light);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 7px 10px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+  }
+}
